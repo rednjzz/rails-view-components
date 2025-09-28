@@ -63,3 +63,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "view_component", "~> 4.0"
+gem "view_component-contrib", "~> 0.2.5"
+
+gem "dry-initializer", "~> 3.2"
