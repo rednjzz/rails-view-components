@@ -4,9 +4,9 @@
 class ViewComponentGenerator < Rails::Generators::NamedBase
   source_root File.expand_path("templates", __dir__)
 
-  class_option :skip_test, type: :boolean, default: false
-  class_option :skip_system_test, type: :boolean, default: false
-  class_option :skip_preview, type: :boolean, default: false
+  class_option :skip_test, type: :boolean, default: true
+  class_option :skip_system_test, type: :boolean, default: true
+  class_option :skip_preview, type: :boolean, default: true
 
   argument :attributes, type: :array, default: [], banner: "attribute"
 
